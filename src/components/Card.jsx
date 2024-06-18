@@ -10,10 +10,11 @@ export default function Card({ result }) {
           src={`https://image.tmdb.org/t/p/original/${
             result.backdrop_path || result.poster_path
           }`}
+          alt="loading"
           width={500}
           height={300}
           className='sm:rounded-t-lg group-hover:opacity-75 transition-opacity duration-300'
-        ></Image>
+        />
         <div className='p-2'>
           <p className='line-clamp-2 text-md'>{result.overview}</p>
           <h2 className='text-lg font-bold truncate text-amber-500'>
